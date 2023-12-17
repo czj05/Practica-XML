@@ -1,0 +1,29 @@
+<!ELEMENT fruteria (stock,clientes)>
+<!ELEMENT stock (producto+)>
+<!ATTLIST stock category (Frutas_frescas) CDATA  #REQUIRED>
+
+<!ELEMENT producto (pr_nombre,descripcion,precio_kilo)>
+<!ATTLIST producto codigo (1|2|3) CDATA #REQUIRED>
+
+<!ELEMENT pr_nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT precio_kilo (#PCDATA)>
+
+<!ELEMENT clientes (cliente+)>
+<!ATTLIST clientes gender (male|female) CDATA #REQUIRED>
+
+<!ELEMENT cliente (id,clnombre,email,telefono,direccion,compras)>
+<!ELEMENT clnombre (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+
+<!ELEMENT direccion (calle,ciudad)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+
+<!ELEMENT compras (compra)> 
+<!ELEMENT compra (cantidad)>
+<!ATTLIST compra href IDREF #REQUIRED>
+
+<!ELEMENT cantidad (#PCDATA)>

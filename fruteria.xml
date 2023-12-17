@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fruteria SYSTEM "fruteria.dtd">
+<fruteria>
+    <stock category='Frutas frescas'>
+        <producto codigo='1'>
+            <pr_nombre> Manzana </pr_nombre>
+            <descripcion> Manzana fresca y buena </descripcion>
+            <precio_kilo> 1.60€ </precio_kilo>
+        </producto>
+        <producto codigo='2'> 
+            <pr_nombre> Naranja </pr_nombre>
+            <descripcion> Naranja fresca y buena </descripcion>
+            <precio_kilo> 2€ </precio_kilo>
+        </producto>
+        <producto codigo='3'>
+            <pr_nombre> Melon </pr_nombre>
+            <descripcion> Melon fresco y bueno </descripcion>
+            <precio_kilo> 3.50€ </precio_kilo>
+        </producto>
+    </stock>
+    <clientes gender="male">
+        <cliente>
+            <id> 1 </id>
+            <clnombre> Joel </clnombre>
+            <email> joel@gmail.com </email>
+            <telefono> 612-345-678 </telefono>
+            <direccion>  
+                <calle> Calle agosto 92 </calle>
+                <ciudad> Barcelona </ciudad>
+            </direccion>
+            <compras>
+                <compra href= '3'>
+                    <cantidad> 1 </cantidad>
+                </compra>
+            </compras>
+        </cliente>
+        <cliente>  
+            <id> 2 </id>
+            <clnombre> Denis </clnombre>
+            <email> denis@gmail.com </email>
+            <telefono> 612-345-679 </telefono>
+            <direccion>  
+                <calle> Calle julio 99 </calle>
+                <ciudad> Madrid </ciudad>
+            </direccion>
+            <compras>
+                <compra href= '2'>
+                    <cantidad> 3 </cantidad>
+                </compra>
+            </compras>
+        </cliente>
+        <cliente>  
+            <id> 3 </id>
+            <clnombre> Eric </clnombre>
+            <email> eric@gmail.com </email>
+            <telefono> 612-345-675 </telefono>
+            <direccion>  
+                <calle> Calle enero 32 </calle>
+                <ciudad> Malaga </ciudad>
+            </direccion>   
+            <compras>
+                <compra href= '1'>
+                    <cantidad> 4 </cantidad>
+                </compra>
+            </compras>
+        </cliente>  
+    </clientes>
+</fruteria>
